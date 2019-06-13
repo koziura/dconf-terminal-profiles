@@ -1,2 +1,14 @@
 # dconf-terminal-profiles
-dconf backup mate-terminal profiles 
+
+**To backup:**
+
+From a terminal, run:
+`dconf dump /org/mate/terminal/profiles/ > backup_mate-terminal_profiles`
+
+save the backup_mate-terminal_profiles file somewhere for later
+
+To reset to defaults:
+`dconf reset -f /org/mate/terminal/profiles/`
+
+To restore all your settings:
+`dconf load /org/mate/terminal/profiles/ < backup_mate-terminal_profiles`

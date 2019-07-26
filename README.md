@@ -12,3 +12,6 @@ To reset to defaults:
 
 To restore all your settings:
 `dconf load /org/mate/terminal/profiles/ < backup_mate-terminal_profiles`
+
+Modify profile list
+`dconf write /org/mate/terminal/global/profile-list "['default', 'dracula', 'solarized-dark', 'solarized-light']"`
